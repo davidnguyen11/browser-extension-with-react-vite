@@ -1,0 +1,38 @@
+{
+  "name": "browser-extension-with-react-vite",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite build --config ./vite-config/vite.config.dev.ts",
+    "prod": "vite build --config ./vite-config/vite.config.prod.ts",
+    "lint": "eslint .",
+    "prettier:format": "prettier --write '**/**/*.{js,jsx,ts,tsx}'",
+    "prettier:check": "prettier --check '**/*.{js,jsx,ts,tsx}'",
+    "tsc": "tsc --noEmit"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.19.0",
+    "@tailwindcss/vite": "^4.0.6",
+    "@types/node": "^22.13.4",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.19.0",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.4.18",
+    "globals": "^15.14.0",
+    "prettier": "^3.5.1",
+    "tailwindcss": "^4.0.6",
+    "typescript": "~5.7.2",
+    "typescript-eslint": "^8.22.0",
+    "vite": "^6.1.0",
+    "vite-plugin-flatten-output": "^0.0.1",
+    "vite-plugin-static-copy": "^2.2.0"
+  },
+  "packageManager": "pnpm@9.15.4+sha512.b2dc20e2fc72b3e18848459b37359a32064663e5627a51e4c74b2c29dd8e8e0491483c3abb40789cfd578bf362fb6ba8261b05f0387d76792ed6e23ea3b1b6a0"
+}
