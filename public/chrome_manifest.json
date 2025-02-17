@@ -1,22 +1,20 @@
 {
-    "name": "vite-react-chrome-extension",
-    "version": "3.8",
-    "description": "Greeting",
-    "permissions": [
-      "contextMenus",
-      "declarativeContent"
-    ],
-    "manifest_version": 3,
-    "action": {
-      "default_icon": {
-        "34": "images/icon-34.png",
-        "128": "images/icon-128.png"
-      },
-      "default_title": "Greeting",
-      "default_popup": "popup.html"
-    },
-    "icons": {
-      "34": "images/icon-34.png",
-        "128": "images/icon-128.png"
+  "name": "The Clock",
+  "version": "1.0",
+  "description": "The clock which shows time and date quickly. It has background images correspond to the periods of a day.",
+  "permissions": [
+    "declarativeContent"
+  ],
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "48": "images/date-time-48.png",
+      "128": "images/date-time-128.png"
     }
+  },
+  "icons": {
+    "48": "images/date-time-48.png",
+      "128": "images/date-time-128.png"
   }
+}

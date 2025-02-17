@@ -1,22 +1,19 @@
 {
-    "name": "vite-react-chrome-extension",
-    "version": "3.8",
-    "description": "Greeting from Firefox",
-    "permissions": [
-      "contextMenus",
-      "declarativeContent"
-    ],
-    "manifest_version": 3,
-    "action": {
-      "default_icon": {
-        "34": "images/icon-34.png",
-        "128": "images/icon-128.png"
-      },
-      "default_title": "Greeting from Firefox",
-      "default_popup": "popup.html"
+  "name": "The Clock",
+  "version": "1.0",
+  "description": "The clock which shows time and date quickly. It has background images correspond to the periods of a day.",
+  "permissions": [],
+  "manifest_version": 2,
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "48": "images/date-time-48.png",
+      "128": "images/date-time-128.png"
     },
-    "icons": {
-      "34": "images/icon-34.png",
-        "128": "images/icon-128.png"
-    }
+    "default_title": "Getting Started Example"
+  },
+  "icons": {
+    "48": "images/date-time-48.png",
+      "128": "images/date-time-128.png"
   }
+}

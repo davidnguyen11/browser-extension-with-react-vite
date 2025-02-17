@@ -1,9 +1,23 @@
-import { calulate } from './utils';
 import './style.css';
+import { getDisplayDateTime, getPalette } from './utils';
 
 const Popup = () => {
-  console.log('hello world', calulate(1, 1));
-  return <h1 className="text-2xl font-bold text-center text-red-500">hello world 5555</h1>;
-}
+  const { date, time, period } = getDisplayDateTime();
+  const palette = getPalette(period);
+
+  return (
+    <div
+      className="h-[100px] w-[240px] flex flex-col justify-center items-center bg-cover bg-no-repeat"
+      style={{ backgroundImage: `url(images/${period}.png)` }}
+    >
+      <h2 style={{ color: palette }} className="mx-[0px] text-xl">
+        {date}
+      </h2>
+      <h3 style={{ color: palette }} className="mt-[5px] mb-[0px] text-lg">
+        {time}
+      </h3>
+    </div>
+  );
+};
 
 export default Popup;
