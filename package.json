@@ -4,7 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite build --config ./vite-config/vite.config.dev.ts",
+    "chrome:dev": "BROWSER='chrome' vite build --config ./vite-config/vite.config.dev.ts",
+    "chrome": "BROWSER='chrome' vite build --config ./vite-config/vite.config.prod.ts",
+    "firefox:dev": "BROWSER='firefox' vite build --config ./vite-config/vite.config.dev.ts",
+    "firefox": "BROWSER='firefox' vite build --config ./vite-config/vite.config.prod.ts",
     "prod": "vite build --config ./vite-config/vite.config.prod.ts",
     "lint": "eslint .",
     "prettier:format": "prettier --write '**/**/*.{js,jsx,ts,tsx}'",

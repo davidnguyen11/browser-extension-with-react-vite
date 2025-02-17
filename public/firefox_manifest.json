@@ -1,0 +1,22 @@
+{
+    "name": "vite-react-chrome-extension",
+    "version": "3.8",
+    "description": "Greeting from Firefox",
+    "permissions": [
+      "contextMenus",
+      "declarativeContent"
+    ],
+    "manifest_version": 3,
+    "action": {
+      "default_icon": {
+        "34": "images/icon-34.png",
+        "128": "images/icon-128.png"
+      },
+      "default_title": "Greeting from Firefox",
+      "default_popup": "popup.html"
+    },
+    "icons": {
+      "34": "images/icon-34.png",
+        "128": "images/icon-128.png"
+    }
+  }

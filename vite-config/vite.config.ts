@@ -7,6 +7,7 @@ import tailwindcss from '@tailwindcss/vite';
 
 const root = resolve(__dirname, '../src');
 const outDir = resolve(__dirname, '../dist');
+const browser = process.env.BROWSER;
 
 const popupDir = 'pages/popup';
 
@@ -21,7 +22,7 @@ export default defineConfig({
     }),
     viteStaticCopy({
       targets: [
-        { src: '../public/manifest.json', dest: '' },
+        { src: `../public/${browser}_manifest.json`, dest: '', rename: 'manifest.json' },
         { src: '../public/images', dest: '' },
       ],
     }),

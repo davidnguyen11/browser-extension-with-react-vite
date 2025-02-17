@@ -1,9 +1,9 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import PopupApp from './PopupApp';
+import Popup from './Popup';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <PopupApp />
+    <Popup />
   </StrictMode>
 );
